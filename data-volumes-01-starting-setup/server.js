@@ -22,6 +22,8 @@ app.get('/exists', (req, res) => {
   res.sendFile(filePath);
 });
 
+console.log('Yeah')
+
 app.post('/create', async (req, res) => {
   const title = req.body.title;
   const content = req.body.text;
